@@ -1,17 +1,17 @@
-# 🏫 EduManager - Sistema de Gestão Escolar
+# EduManager - Sistema de Gestão Escolar
 
-Este projeto é uma solução moderna e robusta para o desafio técnico de gerenciamento de escolas públicas e turmas. Desenvolvido com **React 19**, **Vite** e **Tailwind CSS v4**, o sistema oferece uma experiência de usuário premium com animações fluidas e arquitetura escalável.
+Este projeto é uma solução moderna e robusta para o desafio técnico de gerenciamento de escolas públicas e turmas. Desenvolvido com React 19, Vite e Tailwind CSS v4, o sistema oferece uma experiência de usuário premium com animações fluidas e arquitetura escalável.
 
-## 🚀 Funcionalidades
+## Funcionalidades
 
 - **Gestão de Escolas**: CRUD completo (Criar, Listar, Editar e Excluir) com busca em tempo real.
 - **Gestão de Turmas**: CRUD completo vinculado a cada escola, incluindo gerenciamento de turnos e anos letivos.
-- **Persistência Local**: Integração com `localStorage` através de um backend simulado (MSW).
+- **Persistência Local**: Integração com localStorage através de um backend simulado (MSW).
 - **Testes Automatizados**: Suíte de testes unitários e de estado com Vitest.
 - **Design Premium**: Interface responsiva, modo Dark, Glassmorphism e animações com Framer Motion.
 - **PT-BR Nativo**: Toda a interface e respostas da API simulada estão em português brasileiro.
 
-## 🛠️ Tecnologias e Versões
+## Tecnologias e Versões
 
 - **Node.js**: v20+
 - **React**: 19.0
@@ -24,7 +24,7 @@ Este projeto é uma solução moderna e robusta para o desafio técnico de geren
 - **Framer Motion**: 11.1 (Animações)
 - **Lucide React**: 0.46 (Ícones)
 
-## 📦 Instalação e Execução
+## Instalação e Execução
 
 1. **Clonar o repositório**:
    ```bash
@@ -43,7 +43,7 @@ Este projeto é uma solução moderna e robusta para o desafio técnico de geren
    ```
    *O sistema abrirá automaticamente em `http://localhost:5173`.*
 
-## 🧪 Como Rodar os Testes
+## Como Rodar os Testes
 
 Implementamos testes unitários para garantir a estabilidade do Store e dos componentes principais.
 
@@ -52,11 +52,11 @@ Para rodar os testes:
 npm test
 ```
 
-## 🔌 Backend Simulado (MSW)
+## Backend Simulado (MSW)
 
-O projeto utiliza **MSW** para interceptar chamadas de rede. 
-- Os dados são carregados inicialmente de `src/mocks/handlers.ts`.
-- Qualquer alteração (criação, edição ou exclusão) é persistida no `localStorage` do seu navegador para que os dados não sejam perdidos ao recarregar a página.
+O projeto utiliza MSW para interceptar chamadas de rede. 
+- Os dados são carregados inicialmente de src/mocks/handlers.ts.
+- Qualquer alteração (criação, edição ou exclusão) é persistida no localStorage do seu navegador para que os dados não sejam perdidos ao recarregar a página.
 
 ---
 Desenvolvido como parte de um teste técnico de excelência.
