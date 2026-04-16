@@ -9,7 +9,6 @@ Este projeto é uma solução moderna e robusta para o desafio técnico de geren
 - **Persistência Local**: Integração com localStorage através de um backend simulado (MSW).
 - **Testes Automatizados**: Suíte de testes unitários e de estado com Vitest.
 - **Design Premium**: Interface responsiva, modo Dark, Glassmorphism e animações com Framer Motion.
-- **PT-BR Nativo**: Toda a interface e respostas da API simulada estão em português brasileiro.
 
 ## Tecnologias e Versões
 
