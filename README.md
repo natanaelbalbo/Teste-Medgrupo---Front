@@ -1,63 +1,62 @@
-# EduManager - Desafio Técnico (Web Version)
+# 🏫 EduManager - Sistema de Gestão Escolar
 
-Este projeto é uma plataforma de gestão escolar desenvolvida para facilitar o controle de escolas e turmas da rede pública. Originalmente proposto como um desafio React Native, esta versão foi adaptada para a **Web** com foco em uma experiência de usuário premium e performance excepcional.
+Este projeto é uma solução moderna e robusta para o desafio técnico de gerenciamento de escolas públicas e turmas. Desenvolvido com **React 19**, **Vite** e **Tailwind CSS v4**, o sistema oferece uma experiência de usuário premium com animações fluidas e arquitetura escalável.
 
-## ✨ Diferenciais Técnicos (Avaliação)
+## 🚀 Funcionalidades
 
-Esta implementação foca em **qualidade de código** e **escalabilidade**, atendendo aos diferenciais solicitados:
+- **Gestão de Escolas**: CRUD completo (Criar, Listar, Editar e Excluir) com busca em tempo real.
+- **Gestão de Turmas**: CRUD completo vinculado a cada escola, incluindo gerenciamento de turnos e anos letivos.
+- **Persistência Local**: Integração com `localStorage` através de um backend simulado (MSW).
+- **Testes Automatizados**: Suíte de testes unitários e de estado com Vitest.
+- **Design Premium**: Interface responsiva, modo Dark, Glassmorphism e animações com Framer Motion.
+- **PT-BR Nativo**: Toda a interface e respostas da API simulada estão em português brasileiro.
 
-- **📦 Design Patterns**: 
-  - **Repository/Service Pattern**: Camada dedicada em `src/services/api.ts` para isolar a lógica de busca de dados (Fetch) da lógica de estado (Zustand).
-  - **Modularização**: Organização estrita por features em `src/features/`.
-- **🛡️ TypeScript Avançado**: Tipagem rigorosa de entidades, payloads de API e uso de `import type` para otimização de bundle.
-- **🎨 UI Premium (Glassmorphism)**: Estilização com Tailwind CSS v4, animações fluidas com Framer Motion e design responsivo.
-- **☁️ Mock Backend (MSW)**: Simulação completa de API REST com persistência em `localStorage` (trabalha offline após o primeiro carregamento).
-- **📝 Qualidade**: Configuração de **Prettier** e **ESLint** para consistência de código.
+## 🛠️ Tecnologias e Versões
 
-## 🚀 Tecnologias e Versões
-
-- **Node**: v18+ (Recomendado v20+)
-- **React**: 19.x
-- **Vite**: 6.x
-- **Standard Libs**:
-  - `Zustand`: Estado Global
-  - `MSW`: API Mocking
-  - `React Router`: Navegação
-  - `Tailwind CSS v4`: Estilização
-  - `Framer Motion`: Animações
+- **Node.js**: v20+
+- **React**: 19.0
+- **TypeScript**: 5.7
+- **Vite**: 6.0
+- **Tailwind CSS**: 4.0
+- **Zustand**: 5.0 (Gestão de Estado)
+- **MSW (Mock Service Worker)**: 2.7 (Simulação de API)
+- **Vitest**: 2.1 (Testes)
+- **Framer Motion**: 11.1 (Animações)
+- **Lucide React**: 0.46 (Ícones)
 
 ## 📦 Instalação e Execução
 
-### Pré-requisitos
-- Node.js instalado.
+1. **Clonar o repositório**:
+   ```bash
+   git clone https://github.com/natanaelbalbo/Teste-Medgrupo---Front.git
+   cd Teste-Medgrupo---Front
+   ```
 
-### Passos
-1. Instale as dependências:
+2. **Instalar dependências**:
    ```bash
    npm install
    ```
-2. Inicie o servidor de desenvolvimento:
+
+3. **Executar o projeto**:
    ```bash
    npm run dev
    ```
+   *O sistema abrirá automaticamente em `http://localhost:5173`.*
 
-### 🛰️ Mock Backend
-O backend é simulado automaticamente pelo **Mock Service Worker** ao abrir o app no navegador. 
-- Os dados são salvos no seu **LocalStorage**, então se você criar uma escola e recarregar a página, ela ainda estará lá.
-- Para resetar o banco de dados simulado, basta limpar o LocalStorage do seu navegador.
+## 🧪 Como Rodar os Testes
 
-## 📂 Estrutura do Projeto
+Implementamos testes unitários para garantir a estabilidade do Store e dos componentes principais.
 
-```text
-src/
-├── components/      # Componentes UI compartilhados e Layouts
-├── features/        # Módulos principais (Escolas e Turmas)
-├── mocks/           # Interceptores de API e Handlers (MSW)
-├── services/        # Camada de API (Repository Pattern)
-├── store/           # Lógica de Estado Global (Zustand)
-├── types/           # Definições de TypeScript
-└── assets/          # Estilos e recursos estáticos
+Para rodar os testes:
+```bash
+npm test
 ```
 
+## 🔌 Backend Simulado (MSW)
+
+O projeto utiliza **MSW** para interceptar chamadas de rede. 
+- Os dados são carregados inicialmente de `src/mocks/handlers.ts`.
+- Qualquer alteração (criação, edição ou exclusão) é persistida no `localStorage` do seu navegador para que os dados não sejam perdidos ao recarregar a página.
+
 ---
-Este projeto demonstra competência em desenvolvimento Frontend moderno, organização de código e atenção aos detalhes de UX.
+Desenvolvido como parte de um teste técnico de excelência.
